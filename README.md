@@ -18,3 +18,4 @@ Bu repo, **TALOSLU OLMAK** eğitim programı kapsamında haftalık olarak öğre
 - [`python/05_Donguler.md`](python/05_Donguler.md) — `for`, `while`, `break`, `continue` ve listeler üzerinde döngü kullanımı
 - [`python/06_Liste_Tuple_Dict_Set.md`](python/06_Liste_Tuple_Dict_Set.md) — Temel veri yapıları, en çok kullanılan metotlar ve mini uygulama örnekleri
 - [`python/07_Siniflar_ve_OOP.md`](python/07_Siniflar_ve_OOP.md) — `class` oluşturma, `__init__` yapıcı metodu, metot tanımlama, nesne oluşturma ve sınıf temelli mini projeler
+- [`python/08_Antigravity_ve_Agents_Klasoru.md`](python/08_Antigravity_ve_Agents_Klasoru.md) — Antigravity Uygulaması, Antigravity IDE ve `.agents` klasörünün yapısı, kurallar (`rules`) ve yetenekler (`skills`)

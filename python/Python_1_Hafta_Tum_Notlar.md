@@ -64,6 +64,16 @@
 
 ---
 
+## 2.8 Antigravity Uygulaması, Antigravity IDE ve `.agents` Klasörü
+- **Antigravity IDE & Uygulaması:** Google'ın AI-First (yapay zeka ajan odaklı) geliştirme ortamıdır. IDE tarafı VS Code tabanlı olup `Tab` tamamlama, `Ctrl+I` satır içi düzenleme ve `Agent Mode` (çok adımlı kodlama/terminal yönetimi) sunarken; Masaüstü Uygulaması (Antigravity 2.0) projeleri, arka plan görevlerini ve alt ajanları (subagents) yönetir.
+- **`.agents` Klasörü Ne İşe Yarar?** Proje kök dizininde oluşturulan `.agents/` klasörü, yapay zeka ajanını o projeye özel olarak özelleştirmeye yarar. Antigravity bu klasörü otomatik olarak keşfeder (Auto-Discovery) ve en yüksek öncelikle (Workspace Priority) uygular. GitHub'a yüklendiğinde tüm takım üyelerinin ajanı aynı standartlarla çalışır.
+- **`.agents` İçindeki Temel Yapılar:**
+  - `rules/` (veya `AGENTS.md` / `GEMINI.md`): Ajanın kod yazarken uyması gereken proje kuralları ve kısıtlamalar (ör. PEP 8 uyumu, satır sınırı, isimlendirme kuralları).
+  - `skills/<yetenek_adi>/SKILL.md`: Ajana çok adımlı özel bir iş akışını öğreten, sadece ihtiyaç duyulduğunda bağlama yüklenen (Progressive Disclosure) kılavuzlar.
+  - `plugins/`, `hooks.json`, `mcp_config.json`: Eklenti paketleri, yaşam döngüsü tetikleyicileri ve dış servis (MCP) bağlantıları.
+
+---
+
 ## Anlatım ve Soru-Cevap İçin Hızlı Hazırlık Rehberi
 
 1. **`input()` ile aldığımız sayıyı neden direkt toplayamayız?**  
