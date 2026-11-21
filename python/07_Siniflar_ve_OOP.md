@@ -59,22 +59,22 @@ class Gorev:
 
 
 class GorevYoneticisi:
-    def __init__(self, ekip_adi):
-        self.ekip_adi = ekip_adi
+    def __init__(self, liste_adi):
+        self.liste_adi = liste_adi
         self.gorev_listesi = []
 
     def ekle(self, yeni_gorev):
         self.gorev_listesi.append(yeni_gorev)
 
     def ozet_yazdir(self):
-        print(f"--- {self.ekip_adi} Görev Listesi ---")
+        print(f"--- {self.liste_adi} ---")
         for g in self.gorev_listesi:
             ikon = "[✓]" if g.tamamlandi else "[ ]"
             print(f"{ikon} #{g.kod} - {g.baslik} (Öncelik: {g.oncelik})")
 
 
 # Kullanım:
-yonetici = GorevYoneticisi("TALOS Planlama Ekibi")
+yonetici = GorevYoneticisi("Haftalık Görev Listesi")
 g1 = Gorev(1, "PID hız kontrol testini tamamla", "Yüksek")
 g2 = Gorev(2, "Akış şemasını README dosyasına ekle", "Normal")
 
